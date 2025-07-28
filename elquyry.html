@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vaishnavi & Yuvi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #fff0f5, #e0f7fa);
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      padding: 50px 20px;
+      text-align: center;
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3.5em;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 4px #00000033;
+    }
+
+    header p {
+      font-style: italic;
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    h2 {
+      font-size: 2em;
+      color: #ff4081;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 2px #ffb6c1aa;
+    }
+
+    .typewriter-text {
+      font-size: 1.5em;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #ff4081;
+      width: 0;
+      animation: typing 5s steps(40, end) forwards;
+      color: #6a1b9a;
+    }
+
+    @keyframes typing {
+      to {
+        width: 100%;
+      }
+    }
+
+    .gallery {
+      padding: 40px 20px;
+      background: #fff9f9;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 105, 135, 0.15);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.03);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 15px;
+      transition: opacity 0.4s ease;
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      font-size: 1em;
+      font-weight: 500;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    .gallery-item:hover .caption {
+      opacity: 1;
+    }
+
+    .videos iframe,
+    video {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 12px;
+      margin: 20px 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .yaadein {
+      background: #fce4ec;
+      padding: 25px;
+      border-radius: 12px;
+      font-style: italic;
+      line-height: 1.8;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+      color: #4a148c;
+    }
+
+    audio {
+      display: block;
+      margin: 20px auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #d1c4e9;
+      color: #311b92;
+      font-weight: bold;
+      font-size: 1.2em;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vaishnavi ❤ Yuvi</h1>
+    <p>A Love That Waits...</p>
+  </header>
+
+  <section>
+    <h2>🎤 Our Feelings</h2>
+    <div class="typewriter-text">Jo door hokar bhi dil ke paas rahe... Wahi toh asli mohabbat hoti hai...</div>
+  </section>
+
+  <section>
+    <h2>🎶 Background Music</h2>
+    <audio controls autoplay loop>
+      <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <section class="gallery">
+    <h2>📸 Our Memories</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="1st.jpg" alt="Photo 1">
+        <div class="caption">First Smile Together</div>
+      </div>
+      <div class="gallery-item">
+        <img src="2nd.jpg" alt="Photo 2">
+        <div class="caption">The Walk That Said It All</div>
+      </div>
+      <div class="gallery-item">
+        <img src="4th.jpg" alt="Photo 3">
+        <div class="caption">Unspoken Memories</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="videos">
+    <h2>🎥 Videos Together</h2>
+    <video controls>
+      <source src="3rd.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h3>Instagram Reel</h3>
+    <iframe src="https://www.instagram.com/reel/DL-LeVVsLTF/embed" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section class="yaadein">
+    <h2>📖 Yaadein</h2>
+    <p>
+      Vaishnavi...<br>
+      Jab bhi tum door ho jaati ho, ek khaali sa pinjra ban jaata hai mera din.<br>
+      Main samajhta hoon tum kis wajah se gayi ho...<br>
+      Magar sach yeh hai ki tum aaj bhi mere dil mein rehti ho,<br>
+      Aur main tumhara Yuvi hamesha wahi hoon — jo sirf tumse mohabbat karta hai.<br>
+      Kya tum laut ke aaogi, jab waqt saath hoga?
+    </p>
+  </section>
+
+  <footer>
+    ❤ With Endless Love, Yuvi
+  </footer>
+</body>
+</html>
